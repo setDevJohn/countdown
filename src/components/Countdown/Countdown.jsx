@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Card, Container, CountdownList, Text, TextSpan, Title } from "./styles"
 
 export const Countdown = () => {
-  const startDate = '2023-02-19'
+  const startDate = '2021-11-27T00:00:00'
   // Função para calcular a diferença entre a data inicial e a atual
   function calculateTimeElapsed(startDate) {
     const start = new Date(startDate);
