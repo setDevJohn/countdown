@@ -1,14 +1,15 @@
-import { useMemo } from 'react';
+// import { useMemo } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { list } from './images';
-import audioMp3 from "../../assets/audio/song.mp3"
+// import audioMp3 from "../../assets/audio/song.mp3"
 import { CarouselContainer, Container, ImageSlide, Text, Title } from "./styled"
+import { Countdown } from '../../components/Countdown';
 
 export const Home = () => {
-  const song = useMemo(() => new Audio(audioMp3), []);
-  song.play();
+  // const song = useMemo(() => new Audio(audioMp3), []);
+  // song.play();
 
   const settings = {
     dots: true,
@@ -37,7 +38,8 @@ export const Home = () => {
       Obrigado por tantas histórias lindas que estamos vivendo, e por tudo que ainda vamos viver.
       Amo você!
       </Text>
-      {/* <CountDown/> */}
+
+      <Countdown/>
     </Container>
   )
 }
